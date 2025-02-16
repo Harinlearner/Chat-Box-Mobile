@@ -1,0 +1,41 @@
+.contactButton{
+    font-size: 30px;
+    width:310px;
+    height:50px;
+    border-radius: 30px;
+    margin-bottom: 3px;
+}
+.contactContainer{
+    height:480px;
+    border-radius: 10px;
+    background:linear-gradient(#a1f39b,#0079e3);
+    overflow-y: auto;
+}
+.contactContainer::-webkit-scrollbar{
+    width:5px;
+}  
+
+.contactContainer::-webkit-scrollbar-thumb{
+    background:#000000;
+    border-radius: 3px;
+    border-width: 5px;;
+}
+.contactContainer::-webkit-scrollbar-track{
+    background:rgb(187, 186, 186);
+    border-radius: 3px;
+    border-width: 5px;;
+}
+
+button:hover{
+    color: #000000;
+    background-color: chocolate;
+}
+button:active{
+    background-color: rgb(36, 174, 96);
+}
+button:focus{
+    background-color: rgb(36, 174, 96);
+}
+button:visited{
+    background-color: rgb(36, 174, 96);
+}

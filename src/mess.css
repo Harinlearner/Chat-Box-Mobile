@@ -1,0 +1,252 @@
+.iframeStyle
+{
+    border-radius: 30px;
+    background-color: rgb(44, 193, 39);
+    position:fixed;
+    top: 10%;
+    left:40%;
+    z-index: 2;
+}
+.image{
+    position: relative;
+    top:5px;
+    margin-right: 7px;
+}
+.image1{
+    position: relative;
+    top:1px;
+    margin-right: 7px;
+}
+.userposition{
+    position:relative;
+    top:-35px;
+    left:40px;
+}
+.onlineButton{
+    margin-left: 7px;
+    margin-bottom: -2px;
+    border-radius: 30px;
+    background-color: red;
+}
+.offlineButton{
+    margin-left: 7px;
+    border-radius: 30px;
+    background-color: rgb(9, 255, 0);
+}
+.logOutButton{
+    border-radius: 30px;
+    width:60px;
+    height: 30px;
+    margin-top: 5px;
+    font:bold;
+    float:right;
+}
+.logOutButton:hover{
+    background-color: #000000;
+    color:aliceblue;
+}
+/* .messageContainer::-webkit-scrollbar-corner
+{
+    color: #000000;
+} */
+ .userProfile{
+    width:auto;
+    height:40px;
+    font-size: 35px;
+    margin-bottom: 20px;
+    padding: 10px; 
+    background-color: #535353;
+    animation-name: anime;
+    animation-duration:5s;
+    animation-iteration-count: infinite;
+    text-shadow:3px 3px 7px #0079e3;
+ }
+
+ @keyframes anime{
+    from {color: rgb(255, 0, 0);}
+    to {color:rgb(0, 255, 0);}
+ }
+.messageContainer::-webkit-scrollbar
+{
+    width: 7px;
+    background-color: #399df5;
+}
+.messageContainer::-webkit-scrollbar-thumb{
+    width: 2px;
+    background-color: #000000;
+    border-radius: 30px;
+}
+.contact{
+
+    font-size: 30px;
+    width:95%;
+    height:60px;
+    border-radius: 20px;
+    margin:2px; 
+    background-color: #dddbdb;
+    margin-left: 3%;
+}
+.contactDiv
+{
+    /* background-color: ; */
+    margin-left: 4px;
+    background-image: url('https://t4.ftcdn.net/jpg/05/71/83/47/360_F_571834789_ujYbUnH190iUokdDhZq7GXeTBRgqYVwa.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:500px;
+    background-color: rgb(0, 122, 229);
+    height:706px;
+   
+    overflow-y: auto;
+}
+.contactDiv::-webkit-scrollbar{
+    width: 5px;
+    color:aqua
+}
+.contactDiv::-webkit-scrollbar-thumb { 
+  background:#ff6060;
+  border-radius: 10px;
+  border-width: 3px;
+}
+.contactDiv::-webkit-scrollbar-track{
+ background-color: #000638;
+ border-width: 5px;
+}
+ 
+.container{
+   display:flex;    
+   overflow-x:hidden;
+}
+.frame{
+    overflow-x:hidden;
+}
+.messageContent
+{
+    border-radius: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+/* .contact:hover{
+    font-size: 22px;
+    width:90%;
+    height:50px;
+    margin-left: 5%;
+} */
+
+.messageContainer
+{
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    font-size: 10px;
+    z-index: 1;
+    background-image: url('https://4kwallpapers.com/images/wallpapers/dark-background-abstract-background-network-3d-background-6016x3384-8324.png');
+    background-size: cover;
+    color: rgb(255, 255, 255);
+   margin-left: 1%;
+    width:103%;
+    height:645px;
+    /* background-color: rgb(151, 151, 255); */
+}
+.username
+{
+    color:aliceblue;
+    z-index:2;
+    margin-bottom: 18px;
+    margin-top: -5px;
+    height:40px;
+    padding-top: 7px;
+    width:101%;
+    font-size: 25px;
+    margin-left: 8px;
+    border-radius: 20px;
+    padding-left: 10px;
+    background-color: rgb(138, 63, 250);
+    position: relative;
+    top:10px;
+
+}
+.messageBox
+{
+    
+    font-size: 30px;
+    padding-top: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 3px;
+    margin-left:60px;
+    width:900px;
+    border-radius: 20px;
+    position: fixed;
+    top:91.7%;
+}
+.frame
+{
+    padding-bottom: 7px;
+    margin:-8px -10px -10px -10px;
+    background-color: #000638;
+}
+.AddConvo{
+    height:70px;
+    width:70px;
+    border-radius: 50px;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/3294/3294364.png');
+    background-size: cover;
+    position:fixed;
+    top:80%;
+    left:27%;
+}
+
+/*         iframe extend        */
+
+.contactButton{
+    font-size: 30px;
+    width:310px;
+    height:50px;
+    border-radius: 30px;
+    margin-bottom: 3px;
+}
+.contactContainer{
+    height:480px;
+    border-radius: 10px;
+    background:linear-gradient(#a1f39b,#0079e3);
+    overflow-y: auto;
+}
+.contactContainer::-webkit-scrollbar{
+    width:5px;
+}  
+
+.contactContainer::-webkit-scrollbar-thumb{
+    background:#000000;
+    border-radius: 3px;
+    border-width: 5px;;
+}
+.contactContainer::-webkit-scrollbar-track{
+    background:rgb(187, 186, 186);
+    border-radius: 3px;
+    border-width: 5px;;
+}
+
+button:hover{
+    color: #000000;
+    background-color: chocolate;
+}
+button:active{
+    background-color: rgb(36, 174, 96);
+}
+button:focus{
+    background-color: rgb(36, 174, 96);
+}
+button:visited{
+    background-color: rgb(36, 174, 96);
+}
+
+.addContact
+{
+    border-radius: 30px;
+    background-color: rgb(44, 193, 39);
+    position:fixed;
+    top: 10%;
+    left:40%;
+    z-index: 2;
+}

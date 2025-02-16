@@ -1,0 +1,50 @@
+.loginContainer
+{
+  
+    border-radius: 25px;
+    background-color: #01fe6286;
+    width: fit-content;
+    padding: 4%;
+}
+
+.loginpage{
+    overflow-y:auto;
+    padding-top: 50%;
+    padding-bottom: 105%;
+    background:linear-gradient(to bottom,#6101FE,#FE6101);
+}
+
+.label{
+    font-size: large;
+    
+}
+
+.input{
+    width:130px;
+    padding: 3px;
+    border-radius: 7px;
+}
+
+.login{
+    border-radius: 30px;
+    font-size: large;
+    width: 70px;
+    height:30px;
+}
+
+.login:hover{
+    border-radius: 30px;
+    font-size: large;
+    width: 70px;
+    height:30px;
+    color: aliceblue;
+    background-color: chocolate;
+}
+
+a{
+    color: aliceblue;
+}
+
+a:hover{
+    color: chocolate;
+}
