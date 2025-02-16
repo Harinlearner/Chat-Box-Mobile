@@ -1,7 +1,7 @@
 .loginContainer
 {
   
-    border-radius: 25px;
+    border-radius: 10%;
     background-color: #01fe6273;
     width: fit-content;
     padding: 4%;
@@ -20,9 +20,10 @@
 }
 
 .input{
-    width:130px;
-    padding: 3px;
-    border-radius: 7px;
+    width:100px;
+    padding: 4px;
+    color: #6101FE;
+    border-radius: 10px;
 }
 
 .login{

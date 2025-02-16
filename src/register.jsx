@@ -27,7 +27,8 @@ function register() {
                 <center>
                     <div className='loginContainer'>
                         <form onSubmit={submitted}>
-                            <h1>Register To Chat</h1>
+                            <h1>Register</h1>
+                            <h4 style={{marginTop:"-20px",marginBottom:"-5px"}}>To Chat</h4>
                             <br></br>
                             <b><label className='label'>Username : </label></b>
                             <input className='input' type='text' onChange={(e) => setUserName(e.target.value)}></input>
