@@ -8,10 +8,10 @@
 }
 
 .loginpage{
-    overflow-y:auto;
     padding-top: 50%;
     padding-bottom: 105%;
     background:linear-gradient(to bottom,#6101FE,#FE6101);
+    overflow: hidden;
 }
 
 .label{
