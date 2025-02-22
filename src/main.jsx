@@ -7,11 +7,16 @@ import {
 import Login from './login'
 import Message from "./message";
 import ContactList from "./contactList";
-import Register from './register'
+import Register from './register';
+import MessageMain from './messageMain';
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Login />
+  },
+  {
+    path:"/message",
+    element:<MessageMain />
   },
   {
     path: "/main",

@@ -9,8 +9,8 @@
 }
 .image{
     position: relative;
-    top:5px;
-    margin-right: 7px;
+    top:0px;
+    /* margin-right: 7px; */
 }
 .image1{
     position: relative;
@@ -137,6 +137,7 @@
 .messageContainer
 {
     overflow-y: auto;
+    overflow-x:hidden;
     scroll-behavior: smooth;
     font-size: 10px;
     z-index: 1;
@@ -144,7 +145,6 @@
     background-size: cover;
     color: rgb(255, 255, 255);
    margin-left: 1%;
-    width:103%;
     height:645px;
     /* background-color: rgb(151, 151, 255); */
 }
@@ -194,7 +194,7 @@
     background-size: cover;
     position:fixed;
     top:80%;
-    left:27%;
+    right:12%;
 }
 
 /*         iframe extend        */
@@ -243,10 +243,11 @@ button:visited{
 
 .addContact
 {
+    padding: 10px;
     border-radius: 30px;
-    background-color: rgb(44, 193, 39);
+    background: linear-gradient(rgb(44, 193, 39),rgb(211, 70, 70));
     position:fixed;
-    top: 10%;
-    left:40%;
+    top: 25%;
+    right:10%;
     z-index: 2;
 }
