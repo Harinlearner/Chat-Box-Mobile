@@ -42,6 +42,7 @@ function message() {
     const date = new Date().getDate();
     const month = new Date().getMonth();
     const year = new Date().getFullYear();
+    console.log(new Date().getYear());
     const day1 = date + "-" + month + "-" + year;
     axios.get(`https://chatbox-backend-k4rp.onrender.com/user/fetchlog/${day1}`)
       .then((resp) => { setLogDetails(resp.data); });

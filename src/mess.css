@@ -38,6 +38,7 @@
     width:60px;
     height: 30px;
     margin-top: 5px;
+    margin-right: 17px;
     font:bold;
     float:right;
 }
@@ -50,10 +51,10 @@
     color: #000000;
 } */
  .userProfile{
-    width:auto;
+    /* margin-top: 10px; */
+    width:100%;
     height:40px;
     font-size: 35px;
-    margin-bottom: 20px;
     padding: 10px; 
     background-color: #535353;
     animation-name: anime;
@@ -63,7 +64,7 @@
  }
 
  @keyframes anime{
-    from {color: rgb(255, 0, 0);}
+    from {color: rgb(67, 229, 227);}
     to {color:rgb(0, 255, 0);}
  }
 .messageContainer::-webkit-scrollbar
@@ -80,7 +81,7 @@
 
     font-size: 30px;
     width:95%;
-    height:60px;
+    height: 50px;
     border-radius: 20px;
     margin:2px; 
     background-color: #dddbdb;
@@ -88,6 +89,7 @@
 }
 .contactDiv
 {
+    padding-top: 10px;
     /* background-color: ; */
     margin-left: 4px;
     background-image: url('https://t4.ftcdn.net/jpg/05/71/83/47/360_F_571834789_ujYbUnH190iUokdDhZq7GXeTBRgqYVwa.jpg');
@@ -113,8 +115,7 @@
  border-width: 5px;
 }
  
-.container{
-   display:flex;    
+.container{  
    overflow-x:hidden;
 }
 .frame{

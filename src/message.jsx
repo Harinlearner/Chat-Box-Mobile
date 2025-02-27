@@ -45,7 +45,7 @@ function message() {
     axios.get(`https://chatbox-backend-k4rp.onrender.com/user/fetchlog/${day1}`)
       .then((resp) => { setLogDetails(resp.data); });
     // console.log(logDetails);
-  }, [location.pathname,convo]);
+  }, [location.pathname, convo]);
 
   function submitted(e) {
     e.preventDefault();
@@ -58,9 +58,8 @@ function message() {
     console.log(message);
     setMessage('');
   }
-  function nextpage(messageid)
-  {
-    localStorage.setItem('message',JSON.stringify({messageId:messageid}));
+  function nextpage(messageid) {
+    localStorage.setItem('message', JSON.stringify({ messageId: messageid }));
     navigate("/message");
   }
   function fetchlog() {
@@ -77,7 +76,7 @@ function message() {
     const onlinet = logDetails.map(({ username }) => (username));
     setOnline(onlinet);
     console.log(online);
-  }, [logDetails],convo);
+  }, [logDetails], convo);
 
 
   function logOut() {
@@ -146,48 +145,45 @@ function message() {
       }
     }
   }, [selectedContact]);
+
   return (
     <div className='frame' >
       <div className='container'>
-          <div className='userProfile'>{<img width="30px" height="30px" className='image' src="https://static-00.iconduck.com/assets.00/user-icon-1024x1024-dtzturco.png"></img>}{userName}<button className='logOutButton' onClick={() => { logOut(); }}>Logout</button></div>
-        <div className='contactDiv' style={{width:window.innerWidth,height:window.innerHeight}}>
+        <div className='userProfile'>{userName}<button className='logOutButton' onClick={() => { logOut(); }}>Logout</button></div>
+        <div className='contactDiv' style={{ width: window.innerWidth, height: window.innerHeight }}>
 
           {contact.map(contacts => (
             <div key={contacts._id}>
               {
                 userName == contacts.person1 &&
-                <button className='contact' onClick={() => { fetchlog(); setPerson1(contacts.person2), setMessageId(contacts._id); setConvo(contacts.convo); console.log(convo); nextpage(contacts._id);}}>{contacts.person2}</button>
+                <button className='contact' onClick={() => { fetchlog(); setPerson1(contacts.person2), setMessageId(contacts._id); setConvo(contacts.convo); console.log(convo); nextpage(contacts._id); }}>{contacts.person2}</button>
               }
               {
                 userName == contacts.person2 &&
-                <button className='contact' onClick={() => { fetchlog(); setPerson1(contacts.person1), setMessageId(contacts._id); setConvo(contacts.convo); console.log(convo); nextpage(contacts._id);}}>{contacts.person1}</button>
+                <button className='contact' onClick={() => { fetchlog(); setPerson1(contacts.person1), setMessageId(contacts._id); setConvo(contacts.convo); console.log(convo); nextpage(contacts._id); }}>{contacts.person1}</button>
               }
-              {/* {(userName == contacts.person1 && online.includes(contacts.person2)) || (userName == contacts.person2 && online.includes(contacts.person1)) && <button className='onlineButton'>online</button>}
-              {!((userName == contacts.person1 && online.includes(contacts.person2)) || (userName == contacts.person2 && online.includes(contacts.person1))) && <button className='offlineButton'>offline</button>} */}
+
             </div>
           )
           )}
-          {/* <form>
-          <input type="text" value={connectName} onChange={(e)=>{e.preventDefault();setConnctname(e.target.value);}}></input>
-          <button onClick={console.log(connectName)}>submit</button>
-          </form> */}
+
         </div>
         <div>
-        <button className='AddConvo' onClick={() => { setAddFlag(!addFlag) }}></button>
-        {addFlag &&
-          <div className='addContact'>
-            <div className='contactContainer'>
-              {contactFrame.map((contacts) => (
-                <div key={contacts._id}>
-                  {userData.userNameLogin !== contacts.username && <center><button className='contactButton' onClick={() => { setSelectedContact(contacts.username); }}>{contacts.username}</button></center>}
-                </div>
-              ))
-              }
+          <button className='AddConvo' onClick={() => { setAddFlag(!addFlag) }}></button>
+          {addFlag &&
+            <div className='addContact'>
+              <div className='contactContainer'>
+                {contactFrame.map((contacts) => (
+                  <div key={contacts._id}>
+                    {userData.userNameLogin !== contacts.username && <center><button className='contactButton' onClick={() => { setSelectedContact(contacts.username); }}>{contacts.username}</button></center>}
+                  </div>
+                ))
+                }
+              </div>
             </div>
-          </div>
-        }
+          }
+        </div>
       </div>
-       </div>
     </div>
   )
 }
