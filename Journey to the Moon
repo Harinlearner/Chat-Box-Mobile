@@ -1,0 +1,35 @@
+//Gfg
+void dfs(int start,vector<vector<int>>&adj,vector<int>&visit,int &count)
+{
+    visit[start]=1;
+    count++;
+    for(int a:adj[start])
+    {
+        if(visit[a]==0)
+        dfs(a,adj,visit,count);
+    }
+}
+int journeyToMoon(int n, vector<vector<int>> astronaut) {
+    vector<vector<int>>adj(n);
+    vector<int>visit(n,0);
+    for(auto v:astronaut)
+    {
+        adj[v[0]].push_back(v[1]);
+        adj[v[1]].push_back(v[0]);
+    }
+    int res=0;
+    int tot=n*(n-1)/2; //generate all possible pairs
+    for(int i=0;i<n;i++)
+    {
+    int count=0;
+        if(visit[i]==0)
+        {
+            dfs(i,adj,visit,count);
+            cout<<count<<" ";
+            tot-=count*(count-1)/2; //substract the same group pairs because it can't be pairs because of same country
+        }
+        
+        
+    }
+    return tot;
+}
