@@ -246,9 +246,9 @@ button:visited{
 {
     padding: 10px;
     border-radius: 30px;
-    background: linear-gradient(rgb(44, 193, 39),rgb(211, 70, 70));
+    background: linear-gradient(#21A3DE,#DE5C21);
     position:fixed;
-    bottom:20%;
+    top:10%;
     right:10%;
     z-index: 2;
 }
